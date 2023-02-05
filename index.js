@@ -2,12 +2,7 @@
 function superbowlWin(record)
 {
     const firstWinningYear=record.find((e)=> e.result==="W")
-    if (!firstWinningYear)
-    {
-        return undefined;
-    }
-    else 
-    {
-        return firstWinningYear.year;
-    }
+    return (firstWinningYear ? firstWinningYear.year : undefined)
 }
+
+
